@@ -142,7 +142,129 @@ We service Surrey, South London and Kent areas.
 
 <p>Email: enquiries@rejheating.co.uk</p>
 
-<button id="quoteBtn">Request a Quote</button>
+<section class="contact-form">
+
+  <h2>Contact Us</h2>
+
+  <p>Please complete the form below and we will get back to you.</p>
+
+  <form
+
+    action="https://formspree.io/f/xaeebbyg"
+
+    method="POST">
+
+    <label for="contact-name">Your name</label>
+
+    <input
+
+      id="contact-name"
+
+      type="text"
+
+      name="name"
+
+      autocomplete="name"
+
+      required>
+
+    <label for="contact-email">Email address</label>
+
+    <input
+
+      id="contact-email"
+
+      type="email"
+
+      name="_replyto"
+
+      autocomplete="email"
+
+      required>
+
+    <label for="contact-subject">Subject</label>
+
+    <input
+
+      id="contact-subject"
+
+      type="text"
+
+      name="subject"
+
+      required>
+
+    <label for="contact-message">Your message</label>
+
+    <textarea
+
+      id="contact-message"
+
+      name="message"
+
+      rows="6"
+
+      required></textarea>
+
+    <button type="submit">Send Enquiry</button>
+
+  </form>
+
+</section>
+
+<style>
+
+.contact-form {
+
+  max-width: 600px;
+
+  margin: 30px auto;
+
+  padding: 20px;
+
+  font-family: Arial, sans-serif;
+
+}
+
+.contact-form label {
+
+  display: block;
+
+  margin-top: 15px;
+
+}
+
+.contact-form input,
+
+.contact-form textarea {
+
+  box-sizing: border-box;
+
+  width: 100%;
+
+  padding: 12px;
+
+  margin-top: 6px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 4px;
+
+  font: inherit;
+
+}
+
+.contact-form button {
+
+  margin-top: 20px;
+
+  padding: 12px 22px;
+
+  cursor: pointer;
+
+}
+
+</style>
 
 </section>
 
@@ -156,4 +278,5 @@ We service Surrey, South London and Kent areas.
 
 </body>
 
+  
 </html>
