@@ -111,6 +111,92 @@ text-align:center;
 padding:20px;
 }
 
+/* Make sizing more predictable */
+
+*,
+
+*::before,
+
+*::after {
+
+  box-sizing: border-box;
+
+}
+
+/* Keep the page within the viewport */
+
+html {
+
+  max-width: 100%;
+
+}
+
+body {
+
+  margin: 0;
+
+  width: 100%;
+
+}
+
+/* Make media fit their containers */
+
+img,
+
+video,
+
+iframe {
+
+  max-width: 100%;
+
+}
+
+img,
+
+video {
+
+  height: auto;
+
+}
+
+/* Allow long text and links to wrap */
+
+p,
+
+h1,
+
+h2,
+
+h3,
+
+a {
+
+  overflow-wrap: anywhere;
+
+}
+
+/* Adjust the layout on small screens */
+
+@media (max-width: 768px) {
+
+  .container,
+
+  .wrapper,
+
+  main {
+
+    max-width: 100%;
+
+  }
+
+  img {
+
+    max-width: 100%;
+
+  }
+
+}
+
 button{
 padding:15px 25px;
 background:#0077c8;
