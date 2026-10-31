@@ -7,7 +7,7 @@ font-family:Arial,Helvetica,sans-serif;
 
 .container{
   width: 100%;
-  max-width: 1100px;
+  max-width: 1200px;
   margine-inline: auto;
   padding-inline: 16px;
 }
@@ -209,4 +209,91 @@ margin-top:20px;
 
 button:hover{
 background:#005b96;
+}
+/* GLOBAL MOBILE RESPONSIVENESS FIX */
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+html, body {
+
+    width: 100%;
+
+    max-width: 100%;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+body {
+
+    overflow-x: hidden;
+
+}
+
+img {
+
+    max-width: 100%;
+
+    height: auto;
+
+}
+
+/* Ensure main sections use the available screen width */
+
+header,
+
+main,
+
+section,
+
+footer {
+
+    width: 100%;
+
+    max-width: 100%;
+
+}
+
+/* Mobile screen adjustments */
+
+@media screen and (max-width: 768px) {
+
+    body {
+
+        width: 100%;
+
+        margin: 0;
+
+    }
+
+    header,
+
+    main,
+
+    section,
+
+    footer {
+
+        width: 100%;
+
+        max-width: 100%;
+
+    }
+
+    img {
+
+        max-width: 100%;
+
+        height: auto;
+
+        object-fit: contain;
+
+    }
+
 }
