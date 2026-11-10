@@ -418,26 +418,30 @@ footer {
 
    ================================= */
 
+.menu-toggle {
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
 
-    header {
-
-        padding: 5px 10px;
-
+  display: block;
+        font-size: 28px;
+        background: none;
+        border: none;
+        cursor: pointer;
     }
 
-    nav {
-
-        flex-direction: row;
-
-        justify-content: space-between;
-        align-items: center;
-
-        gap: 8px;
-        padding: 5px
-
+    .main-nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
     }
 
+    .main-nav.active {
+        display: flex;
+    }
+}
     .brand-logos {
 
         justify-content: center;
@@ -458,7 +462,7 @@ footer {
 
     }
 
-    nav ul {
+    .main-nav ul {
 
         display: flex;
         flex-direction: row;
@@ -474,13 +478,13 @@ footer {
 
     }
 
-    nav li {
+    .main-nav li {
 
         margin: 0;
 
     }
 
-    nav a {
+    .main-nav a {
 
         font-size: 12px;
         white-space: nowrap;
