@@ -3,7 +3,9 @@ document.getElementById("quoteBtn").addEventListener("click", function(){
 alert("Thank you! Please call us or email us for your free quotation.");
 
 });
-
+document.querySelector('.menu-toggle').addEventListener('click', () => {
+    document.querySelector('.main-nav').classList.toggle('active');
+});
 document.querySelectorAll("nav a").forEach(anchor => {
 
 anchor.addEventListener("click", function(e){
