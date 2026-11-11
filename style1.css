@@ -593,5 +593,76 @@ footer {
 
 }
 
+/* Navigation header */
 
+.site-header {
+  position: relative;
+  z-index: 1000;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px 25px;
+}
+
+/* Hamburger button */
+
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35px;
+  height: 26px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #003366;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+/* Dropdown links */
+
+.nav-links {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 25px;
+  width: 200px;
+  margin: 0;
+  padding: 10px 0;
+  list-style: none;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+.nav-links.active {
+  display: block;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  display: block;
+  padding: 12px 20px;
+  color: #003366;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  background-color: #eeeeee;
+}
 
