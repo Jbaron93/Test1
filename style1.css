@@ -666,3 +666,41 @@ footer {
   background-color: #eeeeee;
 }
 
+/* Desktop header improvements */
+
+@media screen and (min-width: 768px) {
+
+  .site-header {
+    width: 100%;
+    min-height: 100px;
+  }
+
+  .main-nav {
+    min-height: 100px;
+    padding: 15px 40px;
+    box-sizing: border-box;
+  }
+
+  .main-nav .logo img {
+    display: block;
+    width: 200px;
+    height: auto;
+  }
+
+  .menu-toggle {
+    width: 40px;
+    height: 30px;
+  }
+
+  .menu-toggle span {
+    height: 4px;
+  }
+
+  .nav-links {
+    top: 100%;
+    right: 40px;
+    width: 220px;
+  }
+
+}
+
